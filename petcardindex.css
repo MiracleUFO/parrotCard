@@ -143,9 +143,6 @@ body {
 	font-size:2vw;
 	line-height:30px;
 }
-#wrapper {
-	grid-template-rows:55% 45%;
-}
 button {
 	width:20%;
 	height:50px;
