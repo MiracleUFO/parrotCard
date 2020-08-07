@@ -32,7 +32,7 @@ body {
  	font-weight:normal;
  }
  button {
-	width:150px;
+	width:120px;
 	height:30px;
 	background:#2EB0FF;
 	color:white;
@@ -61,7 +61,7 @@ header, main, section, h1, h2 {
 	padding:1% 0;
 }
 header {
-	padding-top:25px;
+	padding-top:5px;
 	grid-area:header;
 }
 #parrotImg {
@@ -70,18 +70,18 @@ header {
 }
 #arrow-left {
 	position:absolute;
-	top:30px;
+	top:10px;
 	left:30px;
 }
 #ellipsis-h {
 	position:absolute;
-	top:30px;
+	top:10px;
 	right:35px;
 }
 main {
 	grid-area:main;
 	display:grid;
-	margin-top:-100px;
+	margin-top:-80px;
 	z-index:1;
 	border-radius:10%;
 	box-shadow:0 2px 4px 0 rgba(0,0,0,0.25);
@@ -95,7 +95,7 @@ main {
 }
 #petDescrpt {
 	background:url('imgs/hearts.png') no-repeat right center;
-	background-size:40px 30%;
+	background-size:50px 35%;
 }
 #location {
 	font-size:2.5vw;
