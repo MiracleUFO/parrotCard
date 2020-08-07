@@ -57,7 +57,7 @@ body {
 	grid-template-areas:'. header .' '. main .';
 	border-radius:5%;
 }
-main, section, h1, h2 {
+header, main, section, h1, h2 {
 	padding:1% 0;
 }
 header {
@@ -81,7 +81,7 @@ header {
 main {
 	grid-area:main;
 	display:grid;
-	margin-top:-15%;
+	margin-top:-100px;
 	z-index:1;
 	border-radius:10%;
 	box-shadow:0 2px 4px 0 rgba(0,0,0,0.25);
@@ -95,13 +95,13 @@ main {
 }
 #petDescrpt {
 	background:url('imgs/hearts.png') no-repeat right center;
-	background-size:35px 35%;
+	background-size:40px 30%;
 }
 #location {
 	font-size:2.5vw;
 	padding-left:8%;
 	background:url('imgs/location.jpeg') no-repeat left center;
-	background-size:8% 90%;
+	background-size:8% 100%;
 }
 #otherDets {
 	display:grid;
@@ -133,8 +133,12 @@ main {
 	height:50px;
 }
 
-
-@media screen and (min-width:800px) {
+@media screen and (max-width:450px) {
+#wrapper {
+	grid-template-rows:30% 70%;
+}
+}
+@media screen and (min-width:900px) {
 #location {
 	background-size:5% 120%;
 	padding-left:5%;
@@ -142,6 +146,9 @@ main {
 body {
 	font-size:2vw;
 	line-height:30px;
+}
+#wrapper {
+	grid-template-rows:55% 45%;
 }
 button {
 	width:20%;
@@ -155,4 +162,9 @@ button {
 	grid-template-rows:120px;
 }
 }
+@media screen and (max-height:900px) {
+	main {
+		margin-top:-5%;
+	}
 
+}
