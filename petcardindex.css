@@ -1,0 +1,160 @@
+html,
+body {
+	height:100%;
+	font-family:Gilroy-Medium, Helvetica;
+	font-size:2.5vw;
+	background:#A9A9A9;
+	color:#A9A9A9;
+	letter-spacing:1px;
+	word-spacing:2px;
+	line-height:25px;
+	box-sizing:border-box;
+}
+* { 
+	text-decoration:none; 
+	list-style-type:none;
+	margin:0;
+	resize:horizontal;
+}
+@font-face {
+	font-family:Gilroy-Medium;
+	src:url('../fontZip/Gilroy/Gilroy-Medium.ttf');
+}
+ h1 {
+ 	color:#696969;
+ }
+ h2 {
+ 	color:#696969;
+ 	font-size:3vw;
+ }
+ p {
+ 	color:#A9A9A9;
+ 	font-weight:normal;
+ }
+ button {
+	width:150px;
+	height:30px;
+	background:#2EB0FF;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	border-radius:30px;
+	border:none;
+}
+.icon {
+	width:5%;
+}
+
+/*---------------------
+  Layout
+-----------------------*/
+#wrapper {
+	min-height:100%;
+	background:white;
+	display:grid;
+	grid-template-columns:5px auto 5px;
+	grid-template-rows:50% 50%;
+	grid-template-areas:'. header .' '. main .';
+	border-radius:5%;
+}
+header, main, section, h1, h2 {
+	padding:1% 0;
+}
+header {
+	padding-top:25px;
+	grid-area:header;
+}
+#parrotImg {
+	width:100%;
+	border-radius:10% 10% 0 0;
+}
+#arrow-left {
+	position:absolute;
+	top:30px;
+	left:30px;
+}
+#ellipsis-h {
+	position:absolute;
+	top:30px;
+	right:35px;
+}
+main {
+	grid-area:main;
+	display:grid;
+	margin-top:-100px;
+	z-index:1;
+	border-radius:10%;
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.25);
+	background:white;
+	padding:0 15px;
+}
+#more {
+	position:relative;
+	left:50%;
+	height:25%;
+}
+#petDescrpt {
+	background:url('imgs/hearts.png') no-repeat right center;
+	background-size:40px 30%;
+}
+#location {
+	font-size:2.5vw;
+	padding-left:8%;
+	background:url('imgs/location.jpeg') no-repeat left center;
+	background-size:8% 100%;
+}
+#otherDets {
+	display:grid;
+	grid-template-columns:30% 30% 30%;
+	grid-column-gap:5%;
+	grid-template-rows:60px;
+	justify-content:center;
+}
+#otherDets div {
+	border:2px solid #EEE;
+	border-radius:15px;
+	display:flex;
+	flex-flow:column;
+	justify-content:center;
+	align-items:center;
+}
+#footer {
+	display:flex;
+	justify-content:space-between;
+}
+#footer div {
+	display:flex;
+}
+#footer div img {
+	padding-right:10px;
+	display:inline;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+}
+
+
+@media screen and (min-width:900px) {
+#location {
+	background-size:5% 120%;
+	padding-left:5%;
+}
+body {
+	font-size:2vw;
+	line-height:30px;
+}
+#wrapper {
+	grid-template-rows:55% 45%;
+}
+button {
+	width:20%;
+	height:50px;
+	font-size:30px;
+}
+#petDescrpt {
+	background-size:80px 30%;
+}
+#otherDets {
+	grid-template-rows:120px;
+}
+}
