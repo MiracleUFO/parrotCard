@@ -57,11 +57,11 @@ body {
 	grid-template-areas:'. header .' '. main .';
 	border-radius:5%;
 }
-header, main, section, h1, h2 {
+main, section, h1, h2 {
 	padding:1% 0;
 }
 header {
-	padding-top:25px;
+	padding-top:5px;
 	grid-area:header;
 }
 #parrotImg {
@@ -95,13 +95,13 @@ main {
 }
 #petDescrpt {
 	background:url('imgs/hearts.png') no-repeat right center;
-	background-size:40px 30%;
+	background-size:35px 35%;
 }
 #location {
 	font-size:2.5vw;
 	padding-left:8%;
 	background:url('imgs/location.jpeg') no-repeat left center;
-	background-size:8% 100%;
+	background-size:8% 90%;
 }
 #otherDets {
 	display:grid;
