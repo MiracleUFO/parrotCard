@@ -133,7 +133,10 @@ main {
 	height:50px;
 }
 
-
+@media screen and (max-width:900px) {
+	#wrapper {
+	grid-template-rows:30% 70%;
+}
 @media screen and (min-width:900px) {
 #location {
 	background-size:5% 120%;
