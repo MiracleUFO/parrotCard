@@ -149,7 +149,16 @@ body {
 	line-height:30px;
 }
 #wrapper {
+	margin:45px 60px 0 60px;
 	grid-template-rows:55% 45%;
+}
+#arrow-left {
+	top:75px;
+	left:90px;
+}
+#ellipsis-h {
+	top:75px;
+	right:90px;
 }
 button {
 	width:20%;
