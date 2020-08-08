@@ -110,7 +110,6 @@ main {
 	grid-template-rows:60px;
 	justify-content:center;
 	overflow-wrap:nowrap;
-	overflow-x:scroll;
 }
 #otherDets div {
 	border:2px solid #EEE;
