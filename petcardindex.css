@@ -60,7 +60,7 @@ header, main, section, h1, h2 {
 	padding:1% 0;
 }
 header {
-	padding-top:5px;
+	padding-top:10px;
 	grid-area:header;
 }
 #parrotImg {
@@ -69,8 +69,13 @@ header {
 }
 #arrow-left {
 	position:absolute;
-	top:30px;
+	top:35px;
 	left:30px;
+}
+#ellipsis-h {
+	position:absolute;
+	top:35px;
+	right:35px;
 }
 #ellipsis-h {
 	position:absolute;
